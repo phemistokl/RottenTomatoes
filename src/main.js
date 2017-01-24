@@ -8,6 +8,9 @@ import App from './containers/App.jsx';
 import Search from './containers/Search.jsx';
 import Movie from './containers/Movie.jsx';
 import About from './containers/About.jsx';
+import Popular from './containers/Popular.jsx';
+import Top from './containers/Top.jsx';
+import Playing from './containers/Playing.jsx';
 import MovieSimilar from './containers/MovieSimilar.jsx';
 import MovieRecommendations from './containers/MovieRecommendations.jsx';
 
@@ -21,6 +24,9 @@ const routes = (
         <Redirect from="/" to="movies" />
         <Route path="movies" component={Search} />
         <Route path="about" component={About} />
+        <Route path="popular" component={Popular} />
+        <Route path="top" component={Top} />
+        <Route path="playing" component={Playing} />
         <Route path="movies/:id" component={Movie}>
             <Route path="recommendations" component={MovieRecommendations} />
             <Route path="similar" component={MovieSimilar} />
