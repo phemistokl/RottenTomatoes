@@ -25,7 +25,7 @@ export function fetchMovie(id) {
 
 export function fetchPopular() {
     const params = {
-        api_key: API_KEY
+        api_key: API_KEY,
     };
 
     return axios.get(`${API_PREFIX}/movie/popular`, { params })
